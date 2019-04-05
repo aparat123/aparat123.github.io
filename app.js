@@ -12,7 +12,7 @@
   firebase.initializeApp(config);
 var firestore = firebase.firestore();
 
-const docRef = firebase.doc("filter/param");
+const docRef = firebase.doc("filter/params");
 const outputHeader = document.querySelector("#pokerStatusOutput");
 const inputTextField = document.querySelector("#latestPokerStatus");
 const saveButton = document.querySelector("#saveStatusButton");
