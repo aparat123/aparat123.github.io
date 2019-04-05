@@ -1,4 +1,5 @@
 
+  
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAn0idywCGZyCEDf3_VVOrM5-LigXkP4Qc",
@@ -20,7 +21,7 @@ const loadButton = document.querySelector("#loadStatusButton");
 saveButton.addEventListener("click", function(){
   const newStatus = inputTextField.value;
   docRef.set({
-    Country : newStatus
+    Status: newStatus
   });
 });
 loadButton.addEventListener("click", function () {
