@@ -18,7 +18,7 @@ const inputTextField = document.querySelector("#latestPokerStatus");
 const saveButton = document.querySelector("#saveStatusButton");
 const loadButton = document.querySelector("#loadStatusButton");
 
-saveButton.addEventListener("click", function(){
+saveButton.addEventListener("click", function() {
   const newStatus = inputTextField.value;
   docRef.set({
     Status: newStatus
@@ -26,6 +26,5 @@ saveButton.addEventListener("click", function(){
     console.log("save");
   )}.catch(function(error) {
     console.log("error");
-  });
   });
 })
