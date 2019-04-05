@@ -21,10 +21,10 @@ const loadButton = document.querySelector("#loadStatusButton");
 saveButton.addEventListener("click", function() {
   const newStatus = inputTextField.value;
   docRef.set({
-    Status: newStatus
+    Statuss: newStatus
   }).then(function(){
     console.log("save");
   )}.catch(function(error) {
-    console.log("error");
+    console.log("error", error);
   });
 })
