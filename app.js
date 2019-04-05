@@ -1,5 +1,5 @@
 
-  
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAn0idywCGZyCEDf3_VVOrM5-LigXkP4Qc",
@@ -23,16 +23,4 @@ saveButton.addEventListener("click", function(){
   docRef.set({
     Status: newStatus
   });
-});
-loadButton.addEventListener("click", function () {
-  docRef.get().then(function (doc) {
-    if(doc && doc.exists){
-      const myData = doc.data();
-      outputHeader.innerText = "Status = " + myData.Country;
-    }
-  }).catch(function (error) {
-    console.log("error");
-  });
-
-});
-});
+})
