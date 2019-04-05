@@ -24,7 +24,9 @@ saveButton.addEventListener("click", function() {
     Status: newStatus
   }).then(function(){
     console.log("save");
+    outputHeader.innerText = "save";
   )}.catch(function(error) {
     console.log("error", error);
+    outputHeader.innerText = "error";
   });
 })
